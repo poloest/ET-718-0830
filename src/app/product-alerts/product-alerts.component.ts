@@ -5,14 +5,13 @@ import { Product } from '../products';
 
 @Component({
   selector: 'app-product-alert',
-  templateUrl: './product-alert.component.html',
-  styleUrls: ['./product-alert.component.css']
+  templateUrl: './product-alerts.component.html',
+  styleUrls: ['./product-alerts.component.css']
 })
-export class ProductAlertComponent implements OnInit {
-
-  @Input() product: Product|undefined;
+export class ProductAlertsComponent implements OnInit {
+  @Input() product: Product | undefined;
   @Output() notify = new EventEmitter();
-  
+
   constructor() {}
 
   ngOnInit() {}
