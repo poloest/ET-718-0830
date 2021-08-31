@@ -9,6 +9,10 @@ import { Product } from '../products';
   styleUrls: ['./product-alert.component.css']
 })
 export class ProductAlertComponent implements OnInit {
+
+  @Input() product: Product|undefined;
+  @Output() notify = new EventEmitter();
+  
   constructor() {}
 
   ngOnInit() {}
